@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/43d8a91248.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <title>Веселые котята</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo"><i class="fa-solid fa-paw fa-2x"></i> Веселые котята</a>
+      <button class="btn" id="open-popup"><i class="fa-solid fa-plus"></i></button>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container main-container">
+      <div class="cards"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="copyright">©2023 Made by Vladimir</div>
+      <div class="socials">
+        <a class="socials-link" href="https://github.com/tvladimir163"><i class="fa-brands fa-github socials__icon"></i></a>
+        <a class="socials-link" href="#"><i class="fa-brands fa-vk socials__icon"></i></a>
+        <a class="socials-link" href="#"><i class="fa-brands fa-telegram socials__icon"></i></a>
+      </div>
+    </div>
+  </footer>
+  <div class="popup-wrap">
+    <div class="popup">
+      <div class="popup__title">
+        <h3>Изменить питомца</h3>
+        <button class="btn" id="popup-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <form class="form">
+        <img src="" alt="" class="form__img" id="img-form" />
+        <input type="text" class="form__input" name="name" required placeholder="Имя" />
+        <input type="number" class="form__input" name="age" min="1" placeholder="Возраст" />
+        <textarea name="description" class="form__input form__textarea" placeholder="Описание" cols="30"
+          rows="10"></textarea>
+        <input type="number" class="form__input" name="rate" min="0" max="10" placeholder="Рейтинг (0-10)" />
+        <label for="favorite" class="form__checkbox-wrap">
+          <input type="checkbox" name="favorite" id="favorite" class="form__checkbox">
+          <span class="form__label">Любимчик</span>
+          <span class="form__fake-checkbox"><i class="fa-regular fa-circle-check"></i></span>
+        </label>
+        <input type="text" class="form__input" name="image" id="img-link" placeholder="Ссылка на фото" />
+        <button type="submit" class="form__btn btn">Добавить котика</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+<template id="card-template">
+  <div class="card">
+    <img src="" alt="Image" class="card__image" />
+    <a href="#" class="card__link">
+      <h3 class="card__name"></h3>
+    </a>
+    <button class="card__like" aria-label="Поставить лайк"><i class="fa-solid fa-heart fa-2x"></i></button>
+    <button class="card__delete" aria-label="Удалить кота"><i class="fa-solid fa-trash"></i></button>
+  </div>
+</template>
+
+<script src="./scripts/api.js"></script>
+<script src="./scripts/addCard.js"></script>
+<script src="./scripts/popup.js"></script>
+<script src="./scripts/editForm.js"></script>
+
+</html>

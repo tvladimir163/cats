@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700;800&family=Raleway:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap");
+
+@import url("./setup/base.css");
+@import url("./setup/variables.css");
+
+@import url("./blocks/header.css");
+@import url("./blocks/main.css");
+@import url("./blocks/footer.css");
+
+
+@import url("./blocks/btn.css");
+@import url("./blocks/card.css");
+@import url("./blocks/popup.css");
+@import url("./blocks/form.css");

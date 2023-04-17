@@ -1,0 +1,26 @@
+.footer {
+    box-shadow: 0 0 2px 0 var(--bg-secondary-color);
+    background-color: var(--bg-main-color);
+    padding: 10px 0;
+}
+
+.copyright {
+    font-size: 13px;
+    color: var(--text-secondary-color);
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials-link {
+    color: var(--bg-secondary-color);
+    font-size: 25px;
+}
+
+.socials-link:hover {
+    color: var(--accent-color);
+    transition: .3s;
+}

@@ -1,0 +1,10 @@
+.header {
+    background-color: var(--bg-main-color);
+    box-shadow: 0 0 2px 0 var(--bg-secondary-color);
+    padding: 20px 0;
+}
+
+.logo:hover {
+    color:var(--accent-color);
+    transition: .3s;
+}

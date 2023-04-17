@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-size: 18px;
+    color: var(--text-main-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+*,
+*::after,
+*::before {
+
+    box-sizing: inherit;
+}
+
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0 16px;
+    }
+}

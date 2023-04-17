@@ -1,0 +1,13 @@
+:root {
+    --bg-main-color: #f8f7f7;
+    --bg-secondary-color: #191414;
+    --bg-btn-hover: #7b8e98;
+    --bg-overlay-color: rgba(25, 20, 20, 0.8);
+    --text-main-color: #191414;
+    --text-light-color: #f8f7f7;
+    --text-secondary-color: #7b8e98;
+    --outline-color: #cfd8dc;
+    --form-color: #eceff1;
+    --accent-color: #405de6;
+    --tertiary-color: #ce2724;
+}
